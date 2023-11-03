@@ -1,13 +1,14 @@
+//menginport test agar bisa sitest menggunakan test
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
 internal class MainTest {
-
-    private val testSample: Main = Main()
+//membuat variabel testMain untuk mengyimpan fungsi pada kelas Main
+    private val testMain: Main = Main()
 
     @Test
     fun testSum() {
         val expected = 42
-        assertEquals(expected, testSample.sum(40, 2))
+        assertEquals(expected, testMain.sum(40, 2))
     }
 }
