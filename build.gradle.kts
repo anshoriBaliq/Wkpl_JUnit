@@ -16,3 +16,13 @@ repositories {
 tasks.withType<KotlinCompile>() {
     kotlinOptions.jvmTarget = "1.8"
 }
+
+dependencies {
+    // Other dependencies.
+    testImplementation(kotlin("test"))
+}
+
+
+tasks.test {
+    useJUnitPlatform()
+}
